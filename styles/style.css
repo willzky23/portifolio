@@ -1,0 +1,596 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Importa as variantes CSS da Preline */
+@import "../node_modules/preline/variants.css";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+
+body{
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  height: 700vh;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+#sobre {
+  scroll-margin-top: -50px; 
+}
+
+#projetos{
+  scroll-margin-top: 20px;
+}
+
+#projetos-container div {
+  background-color: #292929;
+}
+
+#inicio{
+  margin-top: -3%;
+}
+
+#willian{
+
+  @media (min-width: 640px) and (max-width: 750px) {
+    position: absolute;
+    bottom: -50px;
+  }
+
+  @media (min-width: 750px) and (max-width: 1060px){
+    font-size: 80px;
+    position: absolute;
+    bottom: -50px;
+  }
+
+  @media (min-width: 1061px) and (max-width: 1399px) {
+      font-size: 120px;
+      position: absolute;
+      bottom: -80px;
+  }
+
+  @media (min-width: 1400px) {
+    font-size: 160px;
+    position: absolute;
+      bottom: -120px;
+}
+}
+
+#frase{
+  color: white;
+}
+
+#frases{
+  color: #ffffff;
+  position: absolute;
+  top: 10%;
+  left: 30%;
+}
+
+#frase{
+
+  @media (min-width: 0px) and (max-width: 640px){
+    font-size: 15px;
+    position: absolute;
+    bottom: 80px;
+  }
+
+  @media (min-width: 640px) and (max-width: 750px) {
+    position: absolute;
+    bottom: 80px;
+  }
+
+  
+}
+
+
+#webflow{
+  @media (min-width: 0px) and (max-width: 749px) {
+    position: absolute;
+    bottom: -72px;
+    left: 5px;
+  }
+
+  @media (min-width: 750px) and (max-width: 1060px){
+    position: absolute;
+    bottom: -80px;
+    left: 5px;
+  }
+
+  @media (min-width: 1061px) and (max-width: 1399px) {
+      position: absolute;
+      bottom: -80px;
+      left: 5px;
+  }
+
+  @media (min-width: 1400px) {
+    position: absolute;
+      bottom: -110px;
+      left: 5px;
+}
+}
+
+#botao{
+  text-align: center;
+  @media (min-width: 0px) and (max-width: 749px) {
+    position: relative;
+    bottom: -160px;
+    left: 120px;
+    width: 50%; /* Reduz a largura para 50% da largura da tela */
+    height: auto; /* Ajusta a altura automaticamente para o conteúdo */
+    font-size: 0.8rem; /* Ajusta o tamanho do texto */
+    padding: 0.5rem 1rem;
+    
+  }
+
+  @media (min-width: 750px) and (max-width: 1060px){
+    position: relative;
+    bottom: -170px;
+    left: -10%;
+    margin-top: 50%;
+  }
+
+  @media (min-width: 1061px) and (max-width: 1399px) {
+    position: relative;
+    bottom: -220px;
+  }
+
+  @media (min-width: 1400px) {
+    position: relative;
+    bottom: -255px;
+}
+}
+
+#imgsobre{
+  background-color: #2b2b2b;
+  z-index: 2;
+}
+
+
+#chat{
+  background-color: #2b2b2b;
+}
+
+#principal{
+  background-color: #2b2b2b;
+}
+
+#sol{
+  margin: 0;
+  width: 60px;
+  height: 60px;
+}
+
+#lua{
+  margin: 0;
+  width: 40px;
+  height: 40px;
+}
+
+#imgclass{
+  margin-top: 5%;
+}
+
+nav {
+  background-color: #333;
+  padding: 1rem;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+nav ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-around;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  padding: 0.5rem;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.1rem;
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+}
+
+#theme-toggle{
+  position: relative;
+  left: -50px;
+
+  @media (min-width: 0px) and (max-width: 749px) {
+    left: -12px;
+    top: 10px;
+  }
+
+}
+
+#menu-toggle{
+  position: relative;
+  @media (min-width: 0px) and (max-width: 749px) {
+    top: 10px;
+  }
+}
+
+#infor{
+  color: #ffffff;
+}
+
+#mobile-menu{
+  background-color: #2b2b2b;
+}
+
+#menunav{
+  position: relative;
+  z-index: 5;
+}
+
+#conteudo{
+  background-color: #292929;
+}
+
+#quadradoct{
+  margin-top: 10%;
+}
+
+#quadradoct {
+  padding: 5px;
+}
+
+#conteudo {
+  display: flex;
+  position: relative;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  overflow: hidden; /* Garante que nada saia do quadrado */
+  gap: 2px; /* Cria um espaço entre a imagem e o texto */
+}
+
+#imgprincipal {
+  max-width: 35%; /* A imagem vai ocupar até metade da largura */
+  height: auto;
+  border-radius: 40px;
+  padding: 10px; /* Garante um pequeno espaçamento entre a imagem e o contêiner */
+}
+
+#frases {
+  position: relative;
+  z-index: 10;
+  padding: 0px;
+  font-size: 1.2rem;
+  margin-left: -200px; /* Garante que o texto não encoste na imagem */
+  max-width: 80%; /* Limita a largura máxima do texto */
+  line-height: 1.6; /* Ajuste a altura da linha para melhor legibilidade */
+}
+
+@media (min-width: 0px) and (max-width: 749px) {
+  #conteudo {
+    flex-direction: column; /* Coloca a imagem e o texto em coluna */
+    gap: 20px;
+    padding: 10px;    
+  }
+
+  #frases {
+    font-size: 11px;
+    margin-left: -20%; /* Remove o espaçamento à esquerda */
+    top: 0%;
+    padding: 5px;
+  }
+}
+
+@media (min-width: 750px) and (max-width: 1000px){
+  #conteudo {
+    flex-direction: column; /* Coloca a imagem e o texto em coluna */
+    gap: 20px;
+    padding: 10px;    
+  }
+
+  #imgprincipal{
+    height: 400px;
+  }
+
+  #frases {
+    font-size: 11px;
+    margin-left: -20%; /* Remove o espaçamento à esquerda */
+    top: -10%;
+    padding: 5px;
+  }
+
+  
+}
+
+
+@media (min-width: 1001px) {
+  #conteudo {
+    display: flex;
+    position: relative;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    overflow: hidden; /* Garante que nada saia do quadrado */
+    gap: 2px; /* Cria um espaço entre a imagem e o texto */
+  }
+  
+  #imgprincipal {
+    max-width: 38%; /* A imagem vai ocupar até metade da largura */
+    height: auto;
+    border-radius: 40px;  
+    padding: 10px; /* Garante um pequeno espaçamento entre a imagem e o contêiner */
+  }
+  
+  #frases {
+    position: relative;
+    z-index: 10;
+    padding: 0px;
+    font-size: 16px;
+    margin-left: -200px; /* Garante que o texto não encoste na imagem */
+    max-width: 90%; /* Limita a largura máxima do texto */
+    line-height: 1.6; /* Ajuste a altura da linha para melhor legibilidade */
+    margin-top: 20%;
+  }
+
+}
+
+
+#minhashabilidades{
+  color: #ffffff;
+}
+
+#botoesid {
+  background-color: #2b2b2b;
+  border: 2px solid #ffffff; /* Agora a borda vai aparecer */
+  color: #ffffff;
+}
+
+
+.contato-container h2 {
+  font-size: 28px;
+  margin-bottom: 50px;
+  color: #333;
+}
+
+
+.contato-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+
+.contato-form input,
+.contato-form textarea {
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  transition: border-color 0.3s;
+}
+
+.contato-form input:focus,
+.contato-form textarea:focus {
+  border-color: #9d00ff;
+  outline: none;
+}
+
+
+.contato-form button {
+  padding: 12px;
+  border: none;
+  border-radius: 5px;
+  background-color: #a9a9a9;
+  color: rgb(14, 14, 14);
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+
+.contato-form button:hover {
+  background-color: #0056b3;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centraliza os elementos */
+  gap: 10px;
+}
+
+/* Inputs */
+input {
+  background-color: #292929;
+  width: 80%;
+  border: 1px solid #444;
+  border-radius: 5px;
+  color: white;
+  margin: 0 auto;
+}
+
+/* Textarea */
+textarea {
+  background-color: #292929;
+  width: 80%;
+  border: 1px solid #444;
+  border-radius: 5px;
+  color: white;
+  margin: 0 auto;
+}
+
+/* Botão */
+#btform {
+  width: 80%;
+  padding: 10px;
+  background-color: #007bff;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+  margin: 0 auto;
+  transition: background-color 0.3s;
+}
+
+#btform:hover {
+  background-color: #0056b3;
+}
+
+#contato {
+  text-align: center; /* Centraliza o texto */
+  width: 100%; /* Garante que ele ocupe toda a largura disponível */
+  display: block; /* Certifica que o elemento é tratado como um bloco */
+  font-size: 48px;
+  margin-top: 8%;
+  color: #292929;
+}
+
+#projetos{
+  color: #292929;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+/* Reset aplicado apenas no rodapé */
+.footer-section * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Rodapé */
+.footer-section {
+  margin-top: 100px;
+    background-color: #292929;
+    padding: 40px 0;
+    width: 99.5vw; /* Garante que ocupe toda a largura da tela */
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+    overflow-x: hidden; /* Impede barras horizontais indesejadas */
+}
+
+/* Centraliza o conteúdo */
+.footer-container {
+    max-width: 1500px;
+    padding: 0 2%;
+    margin: auto;
+}
+
+.footer-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.footer-col {
+    width: 25%;
+    padding: 0 15px;
+}
+
+.footer-col h4 {
+    font-size: 22px;
+    color: white;
+    margin-bottom: 20px;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.footer-col ul {
+    list-style: none;
+}
+
+.footer-col ul li {
+    margin: 10px 0;
+}
+
+.footer-col ul li a {
+    font-size: 16px;
+    text-transform: capitalize;
+    color: white;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.footer-col ul li a:hover {
+    color: #cecdcd;
+    padding-left: 10px;
+}
+
+.footer-col .medias-socias {
+    margin-top: 30px;
+}
+
+.footer-col .medias-socias a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    width: 40px;
+    margin: 0 10px 10px 0;
+    text-decoration: none;
+    border-radius: 50%;
+    color: white;
+    border: 1px solid white;
+    transition: all 0.5s ease;
+}
+
+.footer-col .medias-socias a:hover {
+    color: #415aca;
+    background-color: white;
+}
+
+.footer-col .form-sub input {
+    width: 100%;
+    padding: 10px;
+    font-size: 15px;
+    outline: none;
+    border: 1px solid white;
+    color: white;
+    background-color: #415aca;
+}
+
+.footer-col .form-sub input::placeholder {
+    color: white;
+}
+
+.footer-col .form-sub button {
+    width: 100%;
+    margin-top: 10px;
+    padding: 10px; 
+    font-size: 17px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    color: #415aca;
+    border-radius: 3px;
+    font-weight: bold;
+    background-color: white;        
+}
+
+/* Responsivo */
+@media (max-width: 800px) {
+    .footer-col {
+        width: 50%;
+        margin-bottom: 30px;
+    }
+}
+
+@media (max-width: 600px) {
+    .footer-col {
+        width: 100%;
+    }
+}

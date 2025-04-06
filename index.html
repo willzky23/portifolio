@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Willian Alves</title>
+  <link rel="stylesheet" href="styles/output.css">
+  <link rel="stylesheet" href="styles/style.css">
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <link rel="icon" href="assets/crown_king_queen_icon_161518.svg" type="image/x-icon">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Bona+Nova+SC:ital,wght@0,400;0,700;1,400&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Righteous&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+  </style>
+  <script src="https://preline.co/assets/js/preline.js"></script>
+  <style>
+    body {
+        transition: background-color 0.3s, color 0.3s;
+    }
+    .light-theme {
+        background-color: #ffffff;
+        color: #000000;
+    }
+
+    .dark-theme {
+        background-color: #1b1b1b;
+        color: #ffffff;
+    }
+
+    .dark-theme2{
+      color: #ffffff;
+    }
+
+    .light-theme2{
+      color: #817f7f;
+    }
+
+    .dark-theme3{
+      color: #ffffff;
+    }
+
+    .light-theme3{
+      color: #121111;
+    }
+  </style>
+</head>
+
+<body class="dark-theme">
+    
+  <div id="menunav" class="container mx-auto flex justify-between items-center p-4">
+      <!-- Botão do menu mobile -->
+      <button id="menu-toggle" class="md:hidden focus:outline-none">
+        <svg class="w-8 h-8" fill="white" viewBox="0 0 24 24">
+          <path d="M4 6h16M4 12h16m-7 6h7" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+        </svg>
+      </button>
+  
+    <!-- Menu Mobile (Alinhado à Esquerda) -->
+    <div id="mobile-menu" class="hidden absolute top-16 left-4 text-center shadow-lg rounded-lg p-3 w-48 md:hidden">
+      <a href="#sobre" id="infor" class="block py-2 border-b border-gray-700 hover:text-gray-300">Sobre</a>
+      <a href="#projetos" id="infor" class="block py-2 border-b border-gray-700 hover:text-gray-300">Projetos</a>
+      <a href="#contato" id="infor" class="block py-2 hover:text-gray-300">Contato</a>
+    </div>
+
+    <!-- Navbar -->
+    <div class="navbar flex justify-between items-center ml-5 mr-5 mt-4 px-4 sm:px-6 py-4 hidden md:flex">
+      <div class="flex gap-6">
+        <a href="#sobre" class="text-white">Sobre</a>
+        <a href="#projetos" class="text-white">Projetos</a>
+        <a href="#contato" class="text-white">Contato</a>
+      </div>
+  </div>
+    
+    <!-- Botão de troca de tema -->
+    <button id="theme-toggle" class="pl-button pl-button-primary bg-transparent">
+      <img src="assets/novo sunn.svg" id="sol" class="w-6 h-6">
+      <img src="assets/crescent-moon-phase-outlined-symbol-of-weather-interface_icon-icons.com_54680.svg" id="lua" class="w-6 h-6 hidden">
+    </button>
+  </div>
+
+    <!--header-->
+    <div class="flex justify-between items-center ml-5 md:ml-32 mr-5 md:mr-32 mt-8">
+      <div class="m-0 p-0 order-2"></div>
+
+      <!-- Primeiro quadrado (com img sobre mim) -->
+      <div id="imgsobre" class="relative z-10 w-14 h-14 rounded-md flex justify-center items-center transition-all duration-500 ease-in-out hover:scale-110 order-1 "> 
+        <div class="relative inline-block">
+          <img class="inline-block size-8 w-9 h-9 rounded-full" src="assets/img chapeu.jpg">
+        </div>
+      </div>
+
+    <!-- Segundo quadrado contato-->
+    <div id="chat" class="w-14 h-14 rounded-md flex justify-center items-center transition-all duration-500 ease-in-out hover:scale-110 order-3"> 
+      <a href="mailto:willianlimaalves01@gmail.com">
+      <div class="relative inline-block">
+        <img id="imgclass" class="inline-block size-16 w-14 h-14 rounded-full" src="assets/definicao.svg">
+      </div>
+      </a>
+    </div>
+  </div>
+
+
+  <!--inicio da pagina-->
+  <div id="inicio" class="px-4 sm:px-6" >
+    <div id="principal" class="h-[300px] max-w-[1280px] w-full mt-32 mx-auto border border-gray-200 rounded-b-lg rounded-[40px] shadow-2xs sm:flex dark:bg-neutral-900 dark:border-neutral-700 dark:shadow-neutral-700/70 relative flex flex-col justify-end">
+      <div>
+        <p id="frase" class="absolute bottom-[130px] text-xl text-center px-4">
+          Sou um entusiasta do design e desenvolvimento front-end, 
+          com foco em criar interfaces funcionais e visualmente impactantes. 
+          Tenho uma sólida experiência em desenvolvimento de soluções digitais, sempre
+          buscando aprimorar minhas habilidades e me atualizar com novas ferramentas e tecnologias.
+        </p>
+      </div>
+
+      <div class="flex justify-center">
+        <div class="p-4 flex flex-col h-full sm:p-7">
+          <!-- Aqui pode ir o conteúdo do seu card -->
+        </div>
+      </div>
+
+      <a id="botao" class=".light-theme" href="https://www.linkedin.com/in/willian-alves-7132082a9/" target="_blank">
+        <button type="button" class="text-[clamp(0.75rem,2vw,1rem)] absolute left-[88%] bottom-[10vh] sm:bottom-[12vh] md:bottom-[14vh] lg:bottom-[16vh] xl:bottom-[18vh]
+          inline-flex h-10 w-36 items-center justify-center gap-x-2 text-sm font-medium rounded-full border border-white
+          shadow-2xs hover:bg-[#3a3a3a] focus:outline-none focus:bg-[#3a3a3a] disabled:opacity-50 disabled:pointer-events-none z-20">
+          Entre em contato
+        </button>
+      </a>
+
+      <div id="willian" class="absolute bottom-[-35px] left-0 right-0 flex justify-center text-[45px] sm:text-[65px] md:text-[90px] text-white z-10 m-0">
+        <div class="w-fit">
+          <div class="">WILLIAN. &nbsp; ALVES</div>
+        </div>
+      </div>
+
+      <p id="webflow" class="text-[clamp(1rem,2vw,1.5rem)] absolute left-[5%] bottom-[15%] sm:bottom-[18%] md:bottom-[20%] lg:bottom-[22%] xl:bottom-[24%]">
+        Front-End Developer
+      </p>
+    </div>
+  </div>
+
+<div id="sobre" class="px-3">
+  <div id="quadradoct" class="px-10 sm:px-16" >
+    <div id="conteudo" class="h-[650px] max-w-[1280px] w-full mt-32 mx-auto border border-gray-200 rounded-[40px] shadow-2xs sm:flex dark:bg-neutral-900 dark:border-neutral-700 dark:shadow-neutral-700/70 relative flex flex-col justify-end">
+      <img id="imgprincipal" src="assets/foto sobre hd.jpg" alt="hd" class="p-5  rounded-[40px]">
+      <div>
+        <p id="frases" class="absolute bottom-[130px] text-xl text-justify px-4">
+          Sou Willian Alves, programador 
+          e designer especializado em front-end 
+          e design de interfaces. Minha trajetória
+           na área da tecnologia é impulsionada pela
+            paixão por transformar ideias em soluções
+             digitais inovadoras, combinando criatividade
+              e conhecimento técnico para entregar interfaces
+               modernas, responsivas e funcionais.
+
+          Tenho experiência no desenvolvimento de
+           websites e aplicações interativas, sempre
+            focando na usabilidade e acessibilidade,
+             para garantir que cada usuário tenha uma
+              experiência intuitiva e fluida.
+           <br>
+           <br>
+          Técnico em Desenvolvimento de Sistemas (cursando) – Maria Célia Pinheiro Falcão
+          <br>
+          
+          Curso de Programação de Jogos – Fábrica de Programadores
+          <br>
+          
+          Curso de Progrmação em nuvem - AWS Academy Cloud Foundations
+          <br>  
+          Metodologia científica - Instituto Federal
+          <br>
+          Organização Pessoal - Bradesco
+          <br>
+          Desenvolvimento Profissional - Bradesco
+        </p>
+      </div>
+    </div>
+
+    
+    <div class="px-1 sm:px-5">
+      <div id="conteudo" class="h-[520px] max-w-[1280px] w-full mt-45 mx-auto border border-gray-200 rounded-[40px] shadow-2xs sm:flex dark:bg-neutral-900 dark:border-neutral-700 dark:shadow-neutral-700/70 flex items-center justify-between p-10">
+        
+        <!-- Texto com tamanho adaptável -->
+        <p id="minhashabilidades" class="text-3xl md:text-4xl lg:text-5xl lg:relative lg:left-[3%]">
+          Minhas <br> habilidades: 
+        </p>
+    
+        <!-- Grid de imagens responsivo -->
+        <div class="grid grid-cols-2 sm:grid-cols-3 gap-10 sm:gap-16 lg:ml-80 transition-all duration-300 relative top-[10px]">
+          <img src="assets/file_type_html_icon_130541.svg" class="w-[100px] h-[100px] min-w-[100px] min-h-[100px]" alt="html">
+          <img src="assets/file_type_css_icon_130661.svg" class="w-[100px] h-[100px] min-w-[100px] min-h-[100px]" alt="css">
+          <img src="assets/file_type_js_official_icon_130509.svg" class="w-[100px] h-[100px] min-w-[100px] min-h-[100px]" alt="js">
+          <img src="assets/figma_logo_icon_147289.svg" class="w-[100px] h-[100px] min-w-[100px] min-h-[100px]" alt="figma">
+          <img src="assets/file_type_python_icon_130221.svg" class="w-[100px] h-[100px] min-w-[100px] min-h-[100px]" alt="python">
+          <img src="assets/file_type_tailwind_icon_130128.svg" class="w-[100px] h-[100px] min-w-[100px] min-h-[100px]" alt="tailwind">
+        </div>
+      </div>
+    </div>
+    
+<!-- Seção de Projetos -->
+<div class="mt-50 text-center text-5xl">
+  <h2 id="projetos">Projetos</h2>
+</div>
+<div id="projetos-container" class="grid grid-cols-1 sm:grid-cols-2 gap-10 max-w-[1280px] mx-auto mt-15">
+  <div class="border rounded-lg p-5 shadow-lg h-[550px] flex flex-col justify-between">
+    <div>
+      <img src="assets/projeto1.png" class="w-full object-cover rounded-md" alt="Projeto 1">
+      <p class="text-lg font-semibold text-white mt-3">Futebol News</p>
+      <p class="text-white mt-5">
+        Desenvolvimento de uma página de notícias sobre futebol com funcionalidades modernas e tecnologias avançadas. O
+        principal diferencial do projeto foi a utilização de um feed RSS, que permite atualizar automaticamente as notícias
+        em tempo real.
+      </p>
+    </div>
+    <a href="https://www.linkedin.com/in/willian-alves-7132082a9/details/projects/" target="_blank" id="botoesid" class="mt-5 border py-2 rounded-lg text-center">Ver Projeto</a>
+  </div>
+
+  <div class="border rounded-lg p-5 shadow-lg h-[550px] flex flex-col justify-between">
+    <div>
+      <img src="assets/projeto2.jpg" class="w-full object-cover rounded-md" alt="Projeto 2">
+      <p class="text-lg font-semibold text-white mt-3">Password Controller</p>
+      <p class="text-white mt-5">
+        Um sistema embarcado inovador para controle de acessos, garantindo segurança e praticidade. Desenvolvido com André Luis
+        Vasconcelos, Gustavo Sousa, Guilherme Morais, Francisco Kauã e Nicollas Ryan.
+      </p>
+    </div>
+    <a href="https://www.linkedin.com/in/willian-alves-7132082a9/details/projects/" target="_blank" id="botoesid" class="mt-5 border py-2 rounded-lg text-center">Ver Projeto</a>
+  </div>
+
+  <div class="border rounded-lg p-5 shadow-lg h-[550px] flex flex-col justify-between">
+    <div>
+      <img src="assets/projeto3.png" class="w-full object-cover rounded-md" alt="Projeto 3">
+      <p class="text-lg font-semibold text-white mt-3">Bloqueador de Sites</p>
+      <p class="text-white mt-5">
+        Desenvolvi um bloqueador de sites para filtrar conteúdos indesejados e controlar o acesso online. A ferramenta auxilia
+        na gestão do tempo e na restrição de informações.
+      </p>
+    </div>
+    <a href="https://www.linkedin.com/in/willian-alves-7132082a9/details/projects/" target="_blank" id="botoesid" class="mt-5 border py-2 rounded-lg text-center">Ver Projeto</a>
+  </div>
+
+  <div class="border rounded-lg p-5 shadow-lg h-[550px] flex flex-col justify-between">
+    <div>
+      <img src="assets/projeto4.png" class="w-full object-cover rounded-md" alt="Projeto 4">
+      <p class="text-lg font-semibold text-white mt-3">Calculadora IP</p>
+      <p class="text-white mt-5">
+        Desenvolvi uma calculadora IP para simplificar a obtenção do endereço IP público de dispositivos conectados à internet.
+        Facilitando diagnósticos de rede e análises de segurança.
+      </p>
+    </div>
+    <a href="https://www.linkedin.com/in/willian-alves-7132082a9/details/projects/" target="_blank" id="botoesid" class="mt-5 border py-2 rounded-lg text-center">Ver Projeto</a>
+  </div>
+
+  <div class="border rounded-lg p-5 shadow-lg h-[550px] flex flex-col justify-between">
+    <div>
+      <img src="assets/projeto5.jpeg" class="w-full object-cover rounded-md" alt="Projeto 5">
+      <p class="text-lg font-semibold text-white mt-3">Cópia Paramount</p>
+      <p class="text-white mt-5">
+        Desenvolvi uma réplica da landing page da Paramount+ para simular um ataque de phishing, como exercício de Segurança da Informação.
+      </p>
+    </div>
+    <a href="https://www.linkedin.com/in/willian-alves-7132082a9/details/projects/" target="_blank" id="botoesid" class="mt-5 border py-2 rounded-lg text-center">Ver Projeto</a>
+  </div>
+
+  <div class="border rounded-lg p-5 shadow-lg h-[550px] flex flex-col justify-between">
+    <div>
+      <img src="assets/projeto6.png" class="w-full object-cover rounded-md" alt="Projeto 6">
+      <p class="text-lg font-semibold text-white mt-3">Lybris</p>
+      <p class="text-white mt-5">
+        Lybris é uma biblioteca virtual para gestão de livros escolares, com preenchimento automático via API do Google Books,
+        design responsivo e validação de empréstimos. Feita com André Luis Vasconcelos, Gustavo Sousa, Guilherme Morais,
+        Francisco Kauã e Nicollas Ryan.
+      </p>
+    </div>
+    <a href="https://www.linkedin.com/in/willian-alves-7132082a9/details/projects/" target="_blank" id="botoesid" class="mt-5 border py-2 rounded-lg text-center">Ver Projeto</a>
+  </div>
+</div>
+
+<!-- Slider -->
+<div data-hs-carousel='{
+  "loadingClasses": "opacity-0",
+  "dotsItemClasses": "hs-carousel-active:bg-blue-700 hs-carousel-active:border-blue-700 size-3 border border-gray-400 rounded-full cursor-pointer dark:border-neutral-600 dark:hs-carousel-active:bg-blue-500 dark:hs-carousel-active:border-blue-500",
+  "slidesQty": {
+    "xs": 1,
+    "lg": 3
+  }
+}' class="relative w-full max-w-[1300px] mt-40 mx-auto px-4"> <!-- Centralizado e Responsivo -->
+  <div class="hs-carousel w-full overflow-hidden bg-white rounded-lg dark:bg-neutral-900">
+    <div class="relative min-h-72 -mx-1">
+      <div class="hs-carousel-body absolute top-0 bottom-0 start-0 flex flex-nowrap opacity-0 transition-transform duration-700">
+        
+        <!-- Slide 1 -->
+        <div class="hs-carousel-slide px-1">
+          <div class="flex justify-center h-full p-6 dark:bg-neutral-800">
+            <img src="assets/c1.png" alt="Certificado 1" class="w-full h-auto rounded-lg shadow-md">
+          </div>
+        </div>
+
+        <!-- Slide 2 -->
+        <div class="hs-carousel-slide px-1">
+          <div class="flex justify-center h-full p-6 dark:bg-neutral-800">
+            <img src="assets/c2.png" alt="Certificado 2" class="w-full h-auto rounded-lg shadow-md">
+          </div>
+        </div>
+
+        <!-- Slide 3 -->
+        <div class="hs-carousel-slide px-1">
+          <div class="flex justify-center h-full p-6 dark:bg-neutral-800">
+            <img src="assets/c3.png"Certificado 3" class="w-full h-auto rounded-lg shadow-md">
+          </div>
+        </div>
+
+        <!-- Slide 4 -->
+        <div class="hs-carousel-slide px-1">
+          <div class="flex justify-center h-full p-6 dark:bg-neutral-800">
+            <img src="assets/c4.png" alt="Certificado 4" class="w-full h-auto rounded-lg shadow-md">
+          </div>
+        </div>
+
+        <div class="hs-carousel-slide px-1">
+          <div class="flex justify-center h-full p-6 dark:bg-neutral-800">
+            <img src="assets/c5.png" alt="Certificado 4" class="w-full h-auto rounded-lg shadow-md">
+          </div>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+
+  <button type="button" class="hs-carousel-prev absolute inset-y-0 start-0 flex items-center justify-center w-10 h-full text-gray-800 hover:bg-gray-800/10 rounded-s-lg dark:text-white dark:hover:bg-white/10">
+    <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M15 18L9 12l6-6"></path>
+    </svg>
+  </button>
+  <button type="button" class="hs-carousel-next absolute inset-y-0 end-0 flex items-center justify-center w-10 h-full text-gray-800 hover:bg-gray-800/10 rounded-e-lg dark:text-white dark:hover:bg-white/10">
+    <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M9 18l6-6-6-6"></path>
+    </svg>
+  </button>
+
+  <div class="hs-carousel-pagination flex justify-center absolute bottom-3 start-0 end-0 flex gap-x-2"></div>
+</div>
+<!-- End Slider -->
+
+
+
+<div>
+  <section id="contato" class="contato-container">
+    <h2 id="contato">Contato</h2>
+    <form class="contato-form" action="" method="POST">
+        <input type="text" placeholder="Seu nome" required>
+        <input type="email" placeholder="Seu e-mail" required>
+        <textarea placeholder="Sua mensagem" required></textarea>
+        <button id="btform" type="submit">Enviar</button>
+    </form>
+  </section>
+</div>
+
+<footer class="footer-section">
+  <div class="footer-container">
+      <div class="footer-row">
+          <div class="footer-col">
+              <h4>Sobre o Projeto</h4>
+              <ul>
+                  <li><a href="#">Funcionalidades</a></li>
+                  <li><a href="#">Termos de Uso</a></li>
+                  <li><a href="#">Política de Privacidade</a></li>
+              </ul>
+          </div>
+          <div class="footer-col">
+              <h4>Ajuda</h4>
+              <ul>
+                  <li><a href="https://www.linkedin.com/in/willian-alves-7132082a9/">Dúvidas Frequentes</a></li>
+                  <li><a href="https://www.linkedin.com/in/willian-alves-7132082a9/">Contato</a></li>
+                  <li><a href="#">Suporte Técnico</a></li>
+                  <li><a href="#">Guia de Uso</a></li>
+              </ul>
+          </div>
+          <div class="footer-col">
+              <h4>Redes Sociais</h4>
+              <div class="medias-socias">
+                <a href="https://instagram.com/seuperfil" target="_blank">
+                  <img src="assets/Instagram_icon-icons.com_66804.svg" alt="Instagram" class="w-6 h-6"/>
+              </a>
+              <a href="https://github.com/willzky23" target="_blank">
+                <img src="assets/github-logo_icon-icons.com_73546.svg" alt="Instagram" class="w-6 h-6"/>
+            </a>
+            <a href="https://www.linkedin.com/in/willian-alves-7132082a9/" target="_blank">
+              <img src="assets/linkedin_icon-icons.com_65929.svg" alt="Instagram" class="w-6 h-6"/>
+          </a>
+          <a href="https://mail.google.com/mail/u/0/?pli=1#sent?compose=GTvVlcSKkVNRVWFxcRjfghlVpPBWSkvQhMccdkHLwnbKbtdLgPgqggWdGvSWRzPfSblTLfdZXMplg" target="_blank">
+            <img src="assets/email-envelope-outline-shape-with-rounded-corners_icon-icons.com_56530.svg" alt="Instagram" class="w-6 h-6"/>
+        </a>
+          </div>
+      </div>
+  </div>
+</footer>
+
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+  
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <script>
+    // Lógica para alternar o tema
+const themeToggleButton = document.getElementById('theme-toggle');
+const body = document.body;
+const sol = document.getElementById('sol');
+const lua = document.getElementById('lua');
+
+// Tamanho das imagens de lua e sol
+const imageSize = "35px"; 
+sol.style.width = imageSize;
+sol.style.height = imageSize;
+lua.style.width = imageSize;
+lua.style.height = imageSize;
+
+lua.style.display = "none"; // Inicializa a lua escondida
+
+// Alterna o tema entre claro e escuro
+themeToggleButton.addEventListener('click', () => {
+    if (body.classList.contains('light-theme')) {
+            body.classList.remove('light-theme');
+            body.classList.add('dark-theme');
+            willian.classList.remove('light-theme2');
+            willian.classList.add('dark-theme2');
+            webflow.classList.remove('light-theme2');
+            webflow.classList.add('dark-theme2');
+            botao.classList.remove('light-theme2');
+            botao.classList.add('dark-theme2');
+            
+            
+        
+        sol.style.display = "inline-block"; // Exibe o sol
+        lua.style.display = "none"; // Esconde a lua
+    } else {
+            body.classList.remove('dark-theme');
+            body.classList.add('light-theme');
+            willian.classList.remove('dark-theme2');
+            willian.classList.add('light-theme2');
+            webflow.classList.remove('dark-theme2');
+            webflow.classList.add('light-theme2');
+            botao.classList.remove('dark-theme2');
+            botao.classList.add('light-theme2');
+            
+        
+        sol.style.display = "none"; // Esconde o sol
+        lua.style.display = "inline-block"; // Exibe a lua
+    }
+});
+
+themeToggleButton.addEventListener('click', () => {
+    const contato = document.getElementById('contato');
+    const projetos = document.getElementById('projetos');
+    
+    if (contato.classList.contains('light-theme3') && projetos.classList.contains('light-theme3')) {
+        contato.classList.remove('light-theme3');
+        contato.classList.add('dark-theme3');
+
+        projetos.classList.remove('light-theme3');
+        projetos.classList.add('dark-theme3');
+        
+        sol.style.display = "inline-block"; // Exibe o sol
+        lua.style.display = "none"; // Esconde a lua
+    } else { 
+        contato.classList.remove('dark-theme3');
+        contato.classList.add('light-theme3');
+
+        projetos.classList.remove('dark-theme3');
+        projetos.classList.add('light-theme3');
+        
+        sol.style.display = "none"; // Esconde o sol
+        lua.style.display = "inline-block"; // Exibe a lua
+    }
+});
+
+// Lógica para alternar a visibilidade do menu
+document.getElementById("menu-toggle").addEventListener("click", function(event) {
+    var menu = document.getElementById("mobile-menu");
+    menu.classList.toggle("hidden"); // Abre/fecha o menu
+    event.stopPropagation();
+});
+
+// Fecha o menu ao clicar fora dele
+document.addEventListener("click", function(event) {
+    var menu = document.getElementById("mobile-menu");
+    var toggleButton = document.getElementById("menu-toggle");
+
+    if (!menu.contains(event.target) && !toggleButton.contains(event.target)) {
+        menu.classList.add("hidden"); // Fecha o menu
+    }
+
+});
+
+
+</script>
+  <script src="./node_modules/preline/dist/preline.js"></script>
+</body>
+</html>  
